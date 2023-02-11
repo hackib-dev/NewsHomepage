@@ -17,7 +17,7 @@
 
 
 
-  <header class="wow animate__animated animate__fadeInDown animate__delay-0.9s">
+  <header>
     <div class="nav">
       <a href="#home">
         <img class="logo" src="./assets/images/logo.svg"> 
@@ -49,18 +49,18 @@
   </header>
 
   <main>
-    <div class="left_contents wow animate__animated animate__fadeInLeft animate__delay-0.9s">
+    <div class="left_content">
       <div class="img">
         <img class="image" src="./assets/images/image-web-3-desktop.jpg">
         <img class="mobile_img" src="./assets/images/image-web-3-mobile.jpg">
       </div>
 
       <div class="left_texts">
-        <div class="left_heading wow animate__animated animate__fadeInBottomLeft animate__delay-1s">
+        <div class="left_heading">
           <h1>The Bright Future of Web 3.0?</h1>
         </div>
 
-        <div class="left_paragraph wow animate__animated animate__fadeInBottomLeft animate__delay-2s">
+        <div class="left_paragraph">
           <p>We dive in to the next evolution of the web that claims to put power of the platforms back
             into the hands of the people. But is it really fulfilling its promise?
           </p>
@@ -69,7 +69,7 @@
       </div>
     </div>
 
-    <div class="right_contents wow animate__animated animate__fadeInRight animate__delay-3s">
+    <div class="right_contents">
       <div class="title">
         <h1> New </h1>
       </div>
@@ -92,7 +92,7 @@
     </div>
   </main>
 
-  <footer class="wow animate__animated animate__fadeInLeft animate__delay-4s">
+  <footer>
       <div class="bottom_contents ">
           <div class="first">
             <img class="footer_image "src="./assets/images/image-retro-pcs.jpg">
@@ -135,21 +135,24 @@
   <script>
   function disappear(){
     const Go = document.getElementById("closeSideBar").textContent;
-    document.querySelector(".small-nav").style.display="None";
+    document.querySelector(".small-nav").style.display="none";
   }
 
   function appear(){
     const Go = document.getElementById("openSideBar").textContent;
-    document.querySelector(".small-nav").style.display="Block";
+    document.querySelector(".small-nav").style.display="block";
   }
   
   
   </script>
 
-  <script src="/assets/js/wow.min.js"></script>
-              <script>
-              new WOW().init();
-              </script>
+  <script src="/assets/js/wow.min.js">
+
+  </script>
+
+  <script>
+    new WOW().init();
+  </script>
     
 </body>
 
