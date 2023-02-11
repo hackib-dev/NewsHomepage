@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/css/styles.css">
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
+  <title>News Homepage</title>
+</head>
+
+<body>
+
+
+
+  <header class="wow animate__animated animate__fadeInDown animate__delay-0.9s">
+    <div class="nav">
+      <a href="#home">
+        <img class="logo" src="./assets/images/logo.svg"> 
+      </a>
+    </div>
+    <div class="navbar">
+      <div id="myLinks" class="navbar_contents">
+        <a href="#news">Home</a>
+        <a href="#contact">New</a>
+        <a href="#about">Popular</a>
+        <a href="#contact">Trending</a>
+        <a href="#about">Categories</a>
+      </div>
+   
+ 
+      <img class="sidebar"  id="openSideBar" onclick="appear()" src="./assets/images/icon-menu.svg">
+    
+      <div class="small-nav">
+          <div class="real-nav">
+              <img style="float:right" class="sidebar" id="closeSideBar" onclick="disappear()" src="./assets/images/icon-menu-close.svg">
+              <p style="padding-bottom: 30px; padding-top:80px">Home</p>
+              <p style="padding-bottom: 30px;">New</p>
+              <p style="padding-bottom: 30px;">Popular</p>
+              <p style="padding-bottom: 30px;">Trending</p>
+              <p>Categories</p>
+          </div>
+      </div> 
+    </div>
+  </header>
+
+  <main>
+    <div class="left_contents wow animate__animated animate__fadeInLeft animate__delay-0.9s">
+      <div class="img">
+        <img class="image" src="./assets/images/image-web-3-desktop.jpg">
+        <img class="mobile_img" src="./assets/images/image-web-3-mobile.jpg">
+      </div>
+
+      <div class="left_texts">
+        <div class="left_heading wow animate__animated animate__fadeInBottomLeft animate__delay-1s">
+          <h1>The Bright Future of Web 3.0?</h1>
+        </div>
+
+        <div class="left_paragraph wow animate__animated animate__fadeInBottomLeft animate__delay-2s">
+          <p>We dive in to the next evolution of the web that claims to put power of the platforms back
+            into the hands of the people. But is it really fulfilling its promise?
+          </p>
+          <input class= 'submit' type="submit" value="READ MORE">
+        </div>
+      </div>
+    </div>
+
+    <div class="right_contents wow animate__animated animate__fadeInRight animate__delay-3s">
+      <div class="title">
+        <h1> New </h1>
+      </div>
+
+      <div class="headers">
+
+        <h1><a href="#">Hydrogen VS Electric Cars</a> </h1>
+        <p> Will hydrogen-fueled cars ever catch up to EVs?</p>
+      </div>
+      <hr>
+      <div class="headers">
+        <h1><a href="#">The Downsides of AI Artistry</a></h1>
+        <p> What are the possible adverse effects of on-demand AI image generation?</p>
+      </div>
+      <hr>
+      <div class="headers">
+        <h1><a href="#">Is VC Funding Drying Up?</a></h1>
+        <p> Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="wow animate__animated animate__fadeInLeft animate__delay-4s">
+      <div class="bottom_contents ">
+          <div class="first">
+            <img class="footer_image "src="./assets/images/image-retro-pcs.jpg">
+          </div>
+
+          <div class="footer_text">
+            <h1>01</h1>
+            <h5><a href="#">Reviving Retro PCs</a></h5>
+            <p> What happens when old PCs are given modern upgrades?</p>
+          </div>
+      </div>
+
+      <div class="bottom_contents">
+        <div class="first">
+          <img class="footer_image "src="./assets/images/image-top-laptops.jpg">
+        </div>
+
+        <div class="footer_text">
+          <h1>02</h1>
+          <h5><a href="#">Top 10 Laptops of 2022</a></h5>
+          <p> Our best picks for various needs and budgets.</p>
+        </div>
+    </div>
+
+    <div class="bottom_contents">
+      <div class="first">
+        <img class="footer_image "src="./assets/images/image-gaming-growth.jpg">
+      </div>
+
+      <div class="footer_text">
+        <h1>03</h1>
+        <h5><a href="#">The Growth of Gaming</a></h5>
+        <p>How the pandemic has sparked fresh opportunities.</p>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <script>
+  function disappear(){
+    const Go = document.getElementById("closeSideBar").textContent;
+    document.querySelector(".small-nav").style.display="None";
+  }
+
+  function appear(){
+    const Go = document.getElementById("openSideBar").textContent;
+    document.querySelector(".small-nav").style.display="Block";
+  }
+  
+  
+  </script>
+
+  <script src="/assets/js/wow.min.js"></script>
+              <script>
+              new WOW().init();
+              </script>
+    
+</body>
+
+</html>

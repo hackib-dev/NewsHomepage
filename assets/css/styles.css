@@ -1,0 +1,300 @@
+*, * *, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+  }
+
+@font-face {
+    font-family: 'InterVariable';
+    src: url(/assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+body{
+    font-family: 'InterVariable';
+    padding: 50px 150px;
+}
+
+header{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 40px;
+    justify-content: space-between;
+}
+
+.navbar_contents a{
+    margin-left: 20px;
+    font-size: 12px;
+    color:  hsl(236, 13%, 42%);
+    font-weight: 500;
+}
+
+.navbar_contents a:hover{
+    color:  hsl(5, 85%, 63%);
+}
+
+.logo{
+    width: 80%;
+}
+
+.content_list{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.content_list li{
+    margin-left: 30px;
+    font-size: 12px;
+    color:  hsl(236, 13%, 42%);
+    font-weight: 500;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+}
+
+.left_contents{
+    width: 90vw;
+}
+
+.image{
+    width:97%;
+}
+
+.mobile_img{
+    display: none;
+}
+
+.left_texts{
+    display: flex;
+    flex-direction: row;
+    width:97%;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.left_heading{
+    width: 45%;
+    font-size:24px;
+    font-weight: bolder;
+    line-height: 1;
+}
+
+.left_paragraph{
+    width: 295px;
+    font-size: 13.5px;
+    color:  hsl(236, 13%, 42%);
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+.submit{
+    background-color: hsl(5, 85%, 63%);
+    border-style: none;
+    padding: 15px 20px;
+    color: hsl(36, 100%, 99%);
+    letter-spacing: 5px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-top: 30px;
+}
+
+.right_contents{
+    background-color: hsl(240, 100%, 5%);
+    color: white;
+    padding: 15px;
+    width: 30vw;
+    line-height: 2;
+}
+
+.title{
+    color:hsl(35, 77%, 62%);
+}
+
+.headers h1{
+    font-size: 16px;
+    font-weight: bold;
+    color: hsl(36, 100%, 99%);
+}
+
+.headers p {
+    font-size: 12px;
+    color:   hsl(233, 8%, 79%);
+    font-weight: 500;
+}
+
+div hr {
+    border: none;
+    height: 0.1px;
+    background-color:  hsl(236, 13%, 42%);
+    color:  hsl(236, 13%, 42%);
+    margin: 25px 0;
+}
+
+footer {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+}
+
+.bottom_contents{
+    display: flex;
+    margin-right: 40px;
+}
+
+.footer_image{
+    width: 80px;
+    margin-right: 20px;
+}
+
+.footer_text{
+    width: 200px;
+}
+
+.footer_text h1{
+    font-size:20px;
+    color: hsl(233, 8%, 79%);
+}
+
+.footer_text h5{
+    margin:10px 0px;
+}
+
+.footer_text p{
+    font-size: 12px;
+    line-height: 2;
+    color: hsl(236, 13%, 42%);
+}
+
+a{
+    text-decoration: none;
+    color: inherit;   
+}
+
+.headers h1 :hover{
+    color:hsl(35, 77%, 62%);
+}
+
+.footer_text h5 :hover{
+   color: hsl(5, 85%, 63%);
+}
+
+.submit:hover{
+    background-color: hsl(240, 100%, 5%);
+    cursor: pointer;
+}
+
+.icon {display: none;}
+
+.small-nav {
+    display: none; 
+   }
+
+#openSideBar {
+    display: none;
+}
+
+@media screen and (max-width:992px){
+
+    .image{
+        display: none;
+    }
+    
+    .mobile_img{
+        display:block;
+        width: 102%;
+    }
+
+    body{
+        padding: 20px 15px;
+    }
+
+    .logo{width: 40px;}
+
+
+    header{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 40px;
+        padding-top: 10px;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .left_texts{
+        display: flex;
+        flex-direction: column;
+        width:100%;
+        margin-top: 20px;
+    }
+    
+    .left_heading{
+        width: 100%;
+    }
+    
+    .left_paragraph{
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .right_contents{
+        width: 100%;
+    }
+
+    footer {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .bottom_contents{
+        display: flex;
+        width:100%;
+        flex-direction: row;
+        margin-top: 20px;
+    }
+
+    .footer_image{
+        margin-right: 20px;
+    }
+
+    .submit{
+        margin-bottom: 50px;
+    }
+
+    .navbar_contents {
+        display: none;
+    }
+
+    .small-nav {
+     position: relative; 
+     display: none;
+  
+    }
+
+    #openSideBar {
+        display: block;
+    }
+
+    .real-nav {
+        height: 100vh;
+        position: absolute;
+        background-color: white;
+        color: black;
+        top: -30px;
+        right:-10px;
+        margin: auto;
+        width: 270px;
+        padding: 40px;
+    }
+    
+  
+}
+
