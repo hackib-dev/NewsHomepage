@@ -61,7 +61,7 @@ main{
 }
 
 .image{
-    width:97%;
+    width:98%;
 }
 
 .mobile_img{
@@ -106,7 +106,7 @@ main{
     background-color: hsl(240, 100%, 5%);
     color: white;
     padding: 15px;
-    width: 30vw;
+    width: 35vw;
     line-height: 2;
 }
 
